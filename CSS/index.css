@@ -91,36 +91,67 @@ video {
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 /* Nav Bar Css */
 .container {
   height: 6em;
   display: flex;
-  justify-content:  center;
+  justify-content: center;
   align-items: center;
   font-family: sans-serif;
   margin-top: 2.5em;
 }
-ul{
+ul {
   padding: 0;
   margin: 0;
   display: flex;
   flex-wrap: wrap;
 }
-
 li {
   list-style: none;
 }
-
 a {
-text-decoration: none;
-color: #3d3d3d;
-font-size: 22px;
-display: block;
-padding: 10px 45px;
-position: relative;
+  text-decoration: none;
+  color: #3d3d3d;
+  font-size: 22px;
+  display: block;
+  padding: 10px 45px;
+  position: relative;
 }
-
 a:before {
   content: "";
   position: absolute;
@@ -133,12 +164,11 @@ a:before {
   transition: all 0.5s;
   transform-origin: left;
 }
-
-a:hover:before, a:hover:after {
+a:hover:before,
+a:hover:after {
   transform: scalex(1);
   background-color: yellow;
 }
-
 a:after {
   content: "";
   position: absolute;
