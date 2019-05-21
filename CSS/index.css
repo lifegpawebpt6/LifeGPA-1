@@ -127,7 +127,9 @@ table {
   border-spacing: 0;
 }
 body {
-  background-image: url('/IMG/templatePNGS/top/homeTopBackground.png');
+  background-image: url('../IMG/templatePNGS/top/homeTopBackground.png');
+  background-color: aqua;
+  color: red;
 }
 /* Nav Bar Css */
 .container {
