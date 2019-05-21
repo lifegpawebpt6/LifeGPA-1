@@ -126,6 +126,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+body {
+  background-image: url('/IMG/templatePNGS/top/homeTopBackground.png');
+}
 /* Nav Bar Css */
 .container {
   height: 6em;
