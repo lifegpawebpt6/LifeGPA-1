@@ -132,13 +132,30 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
-.phone1-img {
+.about-1-img {
   display: flex;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
   margin-top: 4em;
   color: white;
+}
+.top-para {
+  color: red;
+}
+.about-div {
+  display: flex;
+  flex-direction:vertical;
+  justify-content: space-evenly;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.about-screen {
+  display: flex;
+  flex-direction: vertical;
+  width: 50%;
+  
 }
 /* Nav Bar Css */
 .container {
