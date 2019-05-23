@@ -138,6 +138,9 @@ table {
   color: white;
   margin-top: 3em;
 }
+.add-padding {
+  padding-bottom: 2em;
+}
 .top-text1 {
   font-size: 3em;
 }
@@ -163,6 +166,58 @@ table {
 .button2:hover {
   box-shadow: 0 12px 16px 0 yellow, 0 17px 50px 0 yellow;
 }
+.bottom-container {
+  background-image: url('../IMG/templatePNGS/middle/Patterns.png');
+  background-repeat: no-repeat;
+}
+.middle-headers {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 2em;
+}
+.middle-headers h1 {
+  font-size: 60px;
+  font-weight: bold;
+  margin-top: 0.5em;
+}
+.middle-headers h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+.individual-icons {
+  text-align: center;
+}
+.individual-icons h3 {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.individual-icons p {
+  font-style: italic;
+}
+.middle-icons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2em;
+}
+.bottom-portion {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  margin-top: 5em;
+}
+.bottom-bullets {
+  margin-top: 12em;
+}
+.bottom-bullets ul,
+.bottom-bullets li {
+  list-style-image: url('../IMG/templatePNGS/Bottom/checked.png');
+  font-size: 20px;
+  padding: 10px;
+}
 /* Nav Bar Css */
 .container {
   height: 6em;
@@ -171,15 +226,6 @@ table {
   align-items: center;
   font-family: sans-serif;
   padding-top: 5em;
-}
-ul {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-}
-li {
-  list-style: none;
 }
 a {
   text-decoration: none;
