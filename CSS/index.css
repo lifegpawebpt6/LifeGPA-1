@@ -299,6 +299,33 @@ a:after {
   margin-right: 5em;
   margin-left: 5em;
 }
+.dl-bg {
+  background-image: url("../img/templatePNGS/middle/Patterns.png");
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+}
+.dl-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5em;
+  margin-left: 1em;
+}
+.dl-phone {
+  display: flex;
+  justify-content: flex-start;
+}
+.img-2 {
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+.dl-text {
+  margin-top: 3em;
+  font-weight: bold;
+  font-size: 26px;
+  margin-right: 5em;
+  margin-left: 5em;
+}
 .footer-css {
   display: flex;
   justify-content: center;
