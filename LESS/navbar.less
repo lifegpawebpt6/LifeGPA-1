@@ -1,14 +1,16 @@
 /* Nav Bar Css */
+
 .container {
-    height: 6em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: sans-serif;
-    padding-top: 5em;
-  }
-  
-  a {
+  height: 6em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  padding-top: 5em;
+}
+
+
+a {
   text-decoration: none;
   color: white;
   font-size: 22px;
@@ -16,36 +18,96 @@
   white-space: nowrap;
   padding: 10px 45px;
   position: relative;
+}
+
+a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #3d3d3d;
+  transform: scaleX(0);
+  transition: all 0.5s;
+  transform-origin: left;
+}
+
+a:hover:before,
+a:hover:after {
+  transform: scalex(1);
+  background-color: yellow;
+}
+
+a:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #3d3d3d;
+  transform: scaleX(0);
+  transition: all 0.5s;
+  transform-origin: right;
+}
+
+.mobile-container {
+  display: none;
+}
+
+/* End Nav Bar */
+
+@media (max-width:500px) {
+
+  nav {
+    display: none;
   }
-  
-  a:before {
-    content: "";
+
+  .mobile-container {
+    display: contents;
+    max-width: 480px;
+    margin: auto;
+    background-color: grey;
+    height: 500px;
+    color: white;
+    border-radius: 10px;
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+
+  .topnav #myLinks {
+    display: none;
+  }
+
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  .topnav a.icon {
+    background: black;
+    color: whitesmoke;
+    display: block;
     position: absolute;
+    right: 0;
     top: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #3d3d3d;
-    transform: scaleX(0);
-    transition: all 0.5s;
-    transform-origin: left;
   }
-  
-  a:hover:before, a:hover:after {
-    transform: scalex(1);
-    background-color: yellow;
+
+  .topnav a:hover {
+    background-color: black;
+    color:white;
   }
-  
-  a:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #3d3d3d;
-    transform: scaleX(0);
-    transition: all 0.5s;
-    transform-origin: right;
+
+  .active {
+    background-color:black;
+    color: white;
   }
-  /* End Nav Bar */
+}
