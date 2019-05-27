@@ -35,16 +35,39 @@
         </div>
       </nav>
 
+
+      <div class="mobile-container">
+        <div class="topnav">
+          <a href="#home" class="active"><img src="IMG/Logo/logo.png" alt=""></a>
+          <div id="myLinks">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="download.html">How It Works</a>
+            <a href="contactUs.html">Contact US</a>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </div>
+
+
+
       <div class='phone1-img'>
         <div>
           <p class="top-text1">If you gave your life a grade right now </p>
           <span class='top-text-middle'>what would it be?</span>
           <p class='top-text2'>How would you rank your combined efforts in all your different life categories<br>like
             personal development, professional goals, physical fitness,<br> AND relationship building?</p>
-            <h3 class='call-toAction'>Find out today! Download the app!</h3>
+          <h3 class='call-toAction'>Find out today! Download the app!</h3>
           <div class='store-bttns'>
-            <img class='button1 button2 store-bttns1' src="./IMG/templatePNGS/top/Apple Store.png">
-            <img class='button1 button2' src="./IMG/templatePNGS/top/Google play.png" alt=''>
+            <!-- <button onclick="openApple()" type="button" ><img class='button1 button2 store-bttns1' id='appleBttn' src="./IMG/templatePNGS/top/Apple Store.png"></button> 
+            <button onclick="openGoogle()"><img class='button1 button2' src="./IMG/templatePNGS/top/Google play.png" alt=''></button> -->
+
+            <img onclick="openApple()" type="button" class='button1 button2 store-bttns1'
+              src="./IMG/templatePNGS/top/Apple Store.png">
+            <img onclick="openGoogle()" class='button1 button2' src="./IMG/templatePNGS/top/Google play.png" alt=''>
+
           </div>
         </div>
         <img class='add-padding' src='./IMG/templatePNGS/top/Phone.png' alt=''>
@@ -83,7 +106,8 @@
           <ul>
             <li>Log in, and tell the app a list of habits they want to track. </li>
             <li>There are both prompts to add habits to your list, and spots to write your own.</li>
-            <li>The app evaluates the daily habits and rather than calculating streaks<br> on a calendar, it calculates
+            <li>The app evaluates the daily habits and rather than calculating streaks<br> on a calendar, it
+              calculates
               a percentage of times a certain habit has been<br> done int he past 30, 60, or 90 days.</li>
             <li>Then, it averages out all the habits' averages into one overall average.</li>
             <li>All you do is tell the app which habits you performed each day.</li>
@@ -104,7 +128,10 @@
 
   </container>
 
-  <!-- Optional JavaScript -->
+  <!-- Page JavaScript -->
+  <script src="components/index.js"></script>
+
+
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
